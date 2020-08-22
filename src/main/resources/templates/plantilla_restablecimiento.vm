@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Bienvenido a PCG</title>
+		<style type="text/css">
+			p {
+				margin: 0px;
+				padding: 0px 0px 17px 0px;
+				color: #4d4d4d;
+				text-align: justify;
+			}
+
+			.no-p-b {
+				padding-bottom: 0px;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body bgcolor="#fff">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fff">
+			<tr>
+				<td>
+					<table width="500" align="center" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td valign="top" bgcolor="#fff" style="padding-bottom: 33px">
+								<img src="$urlEncabezado" alt="PCG" width="500" height="314">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" class="saludo" bgcolor="#fff" style="padding: 0px 16px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 19px; ">				
+								<p>El restablecimiento de la contrase&ntilde;a ha sido exitoso.</p>
+								<p>Ingrese haciendo uso de las siguientes credenciales</p>
+								<p class="bold no-p-b">Usuario: $dni</p>
+								<p class="bold">Contrase&ntilde;a: $password</p>
+								<p>Una vez acceda, puede emitir sus boletos para disfrutar de las distintas opciones que le ofrecemos.</p>
+								<p class="bold">Gracias por elegirnos</p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" bgcolor="#fff" style="padding: 23px 16px 38px;">
+								<a href="$urlApp" target="_blank" style="display: block;"><img src="$urlImages" alt="Ir a la p�gina"></a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" bgcolor="#fff" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15px;">
+								<p style="border-top: 1px solid #d5d5d5; padding: 14px 16px 0px">La presente informaci&oacute;n y el contenido de este mensaje es confidencial y para uso exclusivo de la persona u organizaci&oacute;n a la que est&aacute; dirigida. Si ha recibido este mensaje por error, por favor, s&iacute;rvase informarlo y borre inmediatamente el mensaje original. Los archivos anexos han sido escaneados y se presume se encuentran libres de virus. Sin perjuicio de ello, es responsabilidad del receptor asegurarse de ello. Avianca no se hace responsable por p&eacute;rdidas o da&ntilde;os causados por el uso de tales archivos.</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
