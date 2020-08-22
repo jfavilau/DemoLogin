@@ -1,4 +1,4 @@
-package com.jfavilau.DemoLogin;
+package com.jfavilau.demologin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
