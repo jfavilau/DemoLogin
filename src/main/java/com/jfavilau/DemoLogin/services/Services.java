@@ -139,7 +139,7 @@ public class Services {
      * @param usuario dni del usuario
      * @return JSON contiene las preguntas almacenadas para el usuario
      */
-    @GetMapping(value = "/questions/{user}", produces = "application/json")
+    @GetMapping(value = "/questions/user/{user}", produces = "application/json")
     public @ResponseBody
     String askQuestionsById(@PathVariable(value = USER) String usuario) {
         Login preguntas;
@@ -175,7 +175,7 @@ public class Services {
      * @param email correo electrónico del usuario
      * @return JSON contiene las preguntas almacenadas para el usuario
      */
-    @GetMapping(value = "/questions/{email}", produces = "application/json")
+    @GetMapping(value = "/questions/email/{email}", produces = "application/json")
     public @ResponseBody
     String getQuestionsByEmail(@PathVariable(value = EMAIL) String email) {
         Login preguntas;
@@ -328,6 +328,11 @@ public class Services {
             logger.info(e.getMessage());
             return ResponseServices.PARSEJSONERROR.toString();
         }
+    }
+
+    @PostMapping(value = "/user/create")
+    public Login userCreate(@RequestBody Login user) {
+        return repository.saveAndFlush(user);
     }
 
 }
